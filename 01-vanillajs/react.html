@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>DevJobs - Empleos</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Listado con empleos y filtros para encontrar el trabajo de tus sueños."
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script type="module">
+      import React from "https://esm.sh/react?dev"
+      import ReactDOM from "https://esm.sh/react-dom/client?dev"
+
+      const titulo = React.createElement(
+        "h1",
+        { style: { color: "#09f" } },
+        "Hola mundo desde React",
+      )
+
+      const rootEl = document.querySelector("#react-root")
+      const root = ReactDOM.createRoot(rootEl)
+      root.render(titulo)
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        DevJobs
+      </h1>
+
+      <nav>
+        <a href="">Inicio</a>
+        <a href="">Empleos</a>
+      </nav>
+
+      <div>
+        <devjobs-avatar service="google" username="google.com" size="32">
+        </devjobs-avatar>
+
+        <devjobs-avatar service="google" username="instagram.com" size="32">
+        </devjobs-avatar>
+
+        <devjobs-avatar size="32"> </devjobs-avatar>
+      </div>
+    </header>
+
+    <main>
+      <section class="jobs-search">
+        <h1>React.js primers pasos</h1>
+
+        <div id="react-root"></div>
+      </section>
+    </main>
+
+    <footer style="padding-bottom: 2000px">
+      <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+    </footer>
+  </body>
+</html>

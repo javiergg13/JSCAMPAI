@@ -1,0 +1,30 @@
+{
+  "name": "04-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "xJavii13",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.5.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.5.1",
+  "type": "module",
+  "dependencies": {
+    "ai": "^7.0.153",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
+    "openai": "^7.30.0",
+    "zod": "^4.6.5"
+  }
+}
