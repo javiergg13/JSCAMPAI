@@ -60,7 +60,7 @@ app.listen(PORT, () => {
 ║                                            ║
 ║   🚀 Express + TypeScript Server           ║
 ║                                            ║
-║   URL: http://localhost:${PORT}              ║
+║   URL: http://localhost:${PORT}               ║
 ║                                            ║
 ║   Endpoints:                               ║
 ║   GET    /jobs                             ║
